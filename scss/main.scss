@@ -1,19 +1,30 @@
-
-// background image
 body {
-  background-image: url(../images/profile.jpeg);
-  background-position: center;
+  // font: 300 14px/1.8 'Raleway', sans-serif;
+  color: #666;
+  overflow-x: hidden;
+}
+
+#home {
+  height: 650px;
+  background-image: url("../images/profile.jpeg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+        background-size: cover;
+  padding: 0;
 }
 
-// background opacity layer
-.bg {
- position: absolute;
- top: 0;
- left: 0;
- bottom: 0;
- right: 0;
- background-color: rgba( 0, 0, 0, 0.4);
+.bg-pattern {
+    background-color: rgba(41, 41, 41, 0.3);
+    background-image: url("../images/pattern.png");
+    background-repeat: repeat;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
 }
-
