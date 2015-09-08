@@ -1,6 +1,7 @@
 body {
-  // font: 300 14px/1.8 'Raleway', sans-serif;
-  color: #666;
+  font: 300 14px/1.8 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  // color: #666;
   overflow-x: hidden;
 }
 
@@ -18,8 +19,8 @@ body {
 }
 
 .bg-pattern {
-    // background-color: rgba(41, 41, 41, 0.3);
-    background-color: rgba(44, 62, 80, 0.3);
+    // background-color: rgba(44, 62, 80, 0.4);
+    background-color: rgba(110, 123, 139, 0.3); 
     background-image: url("../images/pattern.png");
     background-repeat: repeat;
     height: 100%;
@@ -46,7 +47,8 @@ body {
 
 .intro h1{
     font-weight: 800;
-    color: white;
+    color: #fff;
+    letter-spacing: 5px;
 }
 
 .profile-text {
@@ -57,3 +59,99 @@ body {
   text-transform: none;
   margin: 15px 0;
 }
+
+.scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-left: -15px;
+  display: block;
+  z-index: 10;
+    text-align: center;
+}
+
+.scroll-indicator {
+  width: 20px;
+  height: 20px;
+  margin: 11px auto;
+  border-right: 2px solid #FFF;
+  border-bottom: 2px solid #FFF;
+  border-bottom-right-radius: 2px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: rotate(45deg) translateY(-6px) translateX(-6px);
+            transform: rotate(45deg) translateY(-6px) translateX(-6px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: rotate(45deg) translateY(-6px) translateX(-6px);
+            transform: rotate(45deg) translateY(-6px) translateX(-6px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
