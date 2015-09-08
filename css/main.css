@@ -3,6 +3,10 @@ body {
   letter-spacing: 1px;
   overflow-x: hidden; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 #home {
   height: 100vh;
   background-image: url("../images/profile.jpeg");
@@ -107,7 +111,7 @@ body {
   100% {
     opacity: 0; } }
 .pfblock {
-  padding: 120px 0 100px; }
+  padding: 50px 0 50px; }
 
 .pfblock-gray {
   background: #f5f5f5; }
